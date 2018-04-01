@@ -2,7 +2,9 @@ import React from 'react';
 class EsportsWidget extends React.Component {
   render() {
     return (
-      <div>This is so Fancy!</div>
+      <div>
+        <h2>Esports odds widget!</h2>      
+      </div>
     );
   }
 }
