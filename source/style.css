@@ -1,0 +1,64 @@
+.widget-wrapper {
+    max-width: 640px;
+    margin: auto;
+}
+
+.hexagon-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hexagon-wrapper {
+    text-align: center;
+    margin: 1px;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.hexagon-inner {
+    position: absolute;
+    z-index: 99;
+    width: 125%;
+    height: 100%;
+    left: -12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hexagon {
+    height: 100%;
+    width: calc(100% * 0.57735);
+    background: lightcoral;
+    display: inline-block;
+}
+  
+.hexagon:before {
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(60deg);
+}
+
+.hexagon:after {
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(-60deg);
+}
+
+.hexagon .team-image {
+    max-width: 120px;
+    display: inline-block;
+    margin: auto;
+}
