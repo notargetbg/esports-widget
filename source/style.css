@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body * {
+    font-family: 'Russo One', sans-serif;
+}
+
 .widget-wrapper {
-    max-width: 640px;
+    max-width: 360px;
     margin: auto;
 }
 
@@ -13,8 +19,8 @@
     margin: 1px;
     position: relative;
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 .hexagon-inner {
@@ -26,12 +32,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 2.2rem;
+    text-shadow: 1px 3px 1px gray;
 }
 
 .hexagon {
     height: 100%;
     width: calc(100% * 0.57735);
-    background: lightcoral;
+    background: darkgrey;
     display: inline-block;
 }
   
@@ -58,7 +66,15 @@
 }
 
 .hexagon .team-image {
-    max-width: 120px;
+    max-width: 80px;
     display: inline-block;
     margin: auto;
+}
+
+.vs {
+    font-size: 6.4rem;
+    letter-spacing: 0.5rem;
+    position: relative;
+    top: -70px;
+    text-shadow: 0px 3px 1px rgba(128, 128, 128, 0.65);
 }

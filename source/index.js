@@ -34,7 +34,7 @@ class EsportsWidget extends React.Component {
               </div>
             </div>
           </div>
-          <span>
+          <span className="vs">
             vs
           </span>
           <div className="hexagon-wrapper">
