@@ -7,7 +7,10 @@ class EsportsWidget extends React.Component {
     
     return (
       <div className="widget-wrapper">
-         <h2>{title}</h2>
+        <div class="widget-header">
+          <p>GESC: Indonesia Dota2</p>
+          <img class="game-logo" src="https://seeklogo.com/images/D/dota-2-logo-A8CAC9B4C9-seeklogo.com.png" />
+        </div> 
 
         <div className="hexagon-row">
           <div className="hexagon-wrapper">
@@ -45,6 +48,10 @@ class EsportsWidget extends React.Component {
             </div>
           </div>
         </div>
+
+        <div id="trapezoid">
+          <h4>Match Winner</h4>
+        </div>       
         
       </div>
     );
